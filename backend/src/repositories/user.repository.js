@@ -38,3 +38,5 @@ class UserRepository{
      * email: "dasramesh8343003905@gmail.com"
     */
 }
+
+export default new UserRepository();

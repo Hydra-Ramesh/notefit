@@ -15,7 +15,7 @@ export const register = async(req, res)=>{
         res.status(201).json({status: 'success', data: user});
 
     }catch(err){
-        // if the error is due to user already existing, return a 409 Conflict response with an error message
+        // if the error is due to user already existing, return a 500 Internal Server Error response with an error message
         res.status(500).json({status: 'error',message: err.message});
     }
 };

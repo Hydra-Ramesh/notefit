@@ -1,5 +1,5 @@
 import userRepository from '../repositories/user.repository.js';
-import { hashPassword } from '../utils/hashingPassword.js';
+import  hashPassword from '../utils/hashingPassword.js';
 class AuthService {
   async register({ name, email, password }) {
     // check if user already exists
